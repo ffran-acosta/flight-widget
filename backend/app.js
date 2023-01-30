@@ -8,10 +8,11 @@ app.listen(port, start());
 //const axios = require("axios");
 //const cors = require("cors");
 
-require("dotenv").config()
+app.use(require("./routes/db.routes"))
 
-//db connection
-const db = require("./database/db")
-app.use(db)
 
-app.use(require("./routes/flight.routes"))
+
+
+
+
+
