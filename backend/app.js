@@ -5,7 +5,10 @@ const app = express();
 const { port, start } = require("./modules/server");
 app.listen(port, start());
 
-const axios = require("axios");
 const cors = require("cors");
+app.use(cors());
+app.use(express.json());
 
 app.use('/database' ,require("./routes/db.routes"))
+
+const axios = require("axios");

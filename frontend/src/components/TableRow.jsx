@@ -1,7 +1,13 @@
+import TableCell from './TableCell'
 
-const TableRow = () => {
+const TableRow = ({flight}) => {
+    const word = Object.values(flight)
+    console.log(word)
     return (
-        <></>
+        <tr>
+            <td>✈️</td>
+            <td></td>
+        </tr>
     )
 
 }

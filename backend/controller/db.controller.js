@@ -12,6 +12,15 @@ const controller = {
     showAll: async (req, res) => {
         const users = await Flight.find()
         res.send(users)
+    },
+    
+    showAllApi: async (req, res) => {
+        let flights = await Flight.find()
+        return res.status(200).json({
+            total: flights.length,
+            data: flights,
+            status: 200
+        })
     }
 }
 
