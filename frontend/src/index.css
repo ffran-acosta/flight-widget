@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
+
+*{
+    font-family: 'Ubuntu Condensed', sans-serif, Arial;
+    color: #fff;
+    font-size: 35px;
+}
+
+body{
+    display: flex;;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    background-color: #0991E6;
+}
+
+header{
+    padding: 10px;
+}
+
+.departures {
+    background-color: rgb(6,6,6);
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: rgba(50, 50, 94, .25) 0px 13px 27px -5px, 
+    rgba(0, 0, 0, 0) 0 8px 16px -8px;
+}
+
+.departures table {
+    background-color: #464646;
+    text-align: center;
+}
+
+#time{
+    width: 160px;
+}
+
+#destination{
+    width: 700px;
+}
+
+#flight {
+    width: 205px;
+}
+
+#gate{
+    width: 135px
+}
+
+#remarks{
+    width: 260px;
+}
+
