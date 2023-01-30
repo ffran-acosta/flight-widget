@@ -9,10 +9,3 @@ const axios = require("axios");
 const cors = require("cors");
 
 app.use('/database' ,require("./routes/db.routes"))
-
-
-
-
-
-
-

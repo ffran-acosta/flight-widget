@@ -1,16 +1,16 @@
 const connectDb = require("../database/db")
-const User = require('../database/model/User')
+const Flight = require('../database/model/Flight')
 
 const controller = {
     index: (req, res) => {
         res.send('THIS IS BACKEND')
     },
     create: async (req, res) => {
-        const createUser = require('../database/model/create')
-        res.redirect('/users')
+        require('../database/model/create')
+        res.redirect('/database/users')
     },
     showAll: async (req, res) => {
-        const users = await User.find()
+        const users = await Flight.find()
         res.send(users)
     }
 }

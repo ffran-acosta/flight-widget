@@ -1,15 +1,15 @@
-const User = require('./User')
+const Flight = require('./Flight')
 
 const create = async () => {
-    const user = new User({ 
-        name: 'Franco Acosta', 
-        description: 'Full Stack Web Developer', 
-        linkedin: 'ffran-acosta', 
-        github: 'fran-acosta',
-        mail: 'francoaugustoacosta@gmail.com',
+    const flight = new Flight({ 
+        departing: '15:25', 
+        destination: 'Sidney, Australia', 
+        flightNumber: 'SA213', 
+        gate: 'G03',
+        status: 'Cancelled',
     })
-    await user.save()
-    console.log(user)
+    await flight.save()
+    console.log(flight)
 }
 create()
 
