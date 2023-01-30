@@ -1,12 +1,12 @@
 import TableCell from './TableCell'
 
 const TableRow = ({flight}) => {
-    const word = Object.values(flight)
-    console.log(word)
+    const flights = Object.values(flight).slice(1, 6)
     return (
         <tr>
             <td>✈️</td>
-            <td></td>
+            {flights?.map((flight, index) => (
+                <TableCell key = {index} flight = {flight} /> ))}
         </tr>
     )
 

@@ -1,6 +1,6 @@
-const TableCell = () => {
+const TableCell = ({flight}) => {
     return (
-        <></>
+        <td>{flight}</td>
     )
 
 }
