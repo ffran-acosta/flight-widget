@@ -31,6 +31,14 @@ header{
     text-align: center;
 }
 
+.departures table div {
+    border: solid 4px #262626;
+    background-color: #000;
+    min-width: 20px;
+    height: 40px;
+    float: left;
+}
+
 #time{
     width: 160px;
 }

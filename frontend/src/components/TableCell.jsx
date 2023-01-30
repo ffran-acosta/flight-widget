@@ -1,6 +1,10 @@
 const TableCell = ({flight}) => {
     return (
-        <td>{flight}</td>
+        <td>
+            {Array.from(flight).map((letter, index) => (
+                <div>{letter}</div>
+            ))}
+        </td>
     )
 
 }
