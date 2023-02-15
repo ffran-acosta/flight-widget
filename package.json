@@ -1,0 +1,21 @@
+{
+  "name": "flight-widget-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "cd frontend && npm install && cd .. && cd backend && npm install",
+    "server": "cd backend && npm start",
+    "client": "cd frontend && npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ffran-acosta/flight-widget.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ffran-acosta/flight-widget/issues"
+  },
+  "homepage": "https://github.com/ffran-acosta/flight-widget#readme"
+}
